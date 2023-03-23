@@ -272,7 +272,7 @@
                                     </ui:Target>
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Ventas" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://soft.sos-contador.com/web/asistente_iva_compras_ventas.asp?idtipo_operacion=2" />
+                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Ventas" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://nuevo.soft.sos-contador.com/web/asistente_iva_compras_ventas.asp?idtipo_operacion=2" />
                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Desde" sap:VirtualizedContainerService.HintSize="410,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[row(&quot;Periodo&quot;).ToString]">
                                   <ui:TypeInto.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a5f1eff-c0b4-49c0-977a-c64abdede074" InformativeScreenshot="0731457745e65dc3b6bcb0471e406cde" Selector="&lt;webctrl tag='DIV' parentclass='selectize-control form-control single' idx='1' /&gt;">
@@ -371,7 +371,7 @@
                                     </ui:Target>
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Compras" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="https://soft.sos-contador.com/web/asistente_iva_compras_ventas.asp?idtipo_operacion=4" />
+                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Compras" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="https://nuevo.soft.sos-contador.com/web/asistente_iva_compras_ventas.asp?idtipo_operacion=4" />
                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Desde" sap:VirtualizedContainerService.HintSize="410,135" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[row(&quot;Periodo&quot;).ToString]">
                                   <ui:TypeInto.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a5f1eff-c0b4-49c0-977a-c64abdede074" InformativeScreenshot="0731457745e65dc3b6bcb0471e406cde" Selector="&lt;webctrl tag='DIV' parentclass='selectize-control form-control single' idx='1' /&gt;">
@@ -527,7 +527,7 @@
                                     </ui:Target>
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Ventas" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="NavigateTo_3" Url="https://soft.sos-contador.com/web/asistente_iva_compras_ventas.asp?idtipo_operacion=2" />
+                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Ventas" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="NavigateTo_3" Url="https://nuevo.soft.sos-contador.com/web/asistente_iva_compras_ventas.asp?idtipo_operacion=2" />
                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Desde" sap:VirtualizedContainerService.HintSize="410,135" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[row(&quot;Periodo&quot;).ToString]">
                                   <ui:TypeInto.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a5f1eff-c0b4-49c0-977a-c64abdede074" InformativeScreenshot="0731457745e65dc3b6bcb0471e406cde" Selector="&lt;webctrl tag='DIV' parentclass='selectize-control form-control single' idx='1' /&gt;">
