@@ -260,7 +260,7 @@
                                   </ui:Click.Target>
                                 </ui:Click>
                                 <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="410,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Digital" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://soft.sos-contador.com/web/asistente_siap_citi.asp?sistema=LID" />
+                                <ui:NavigateTo Browser="{x:Null}" DisplayName="Ir a Libro IVA Digital" sap:VirtualizedContainerService.HintSize="410,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://nuevo.soft.sos-contador.com/web/asistente_siap_citi.asp?sistema=LID" />
                                 <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="410,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
                                 <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                                   <ui:CommentOut.Body>
