@@ -12,13 +12,13 @@
       "Path": "Descarga_Libros_Mono_solo_LIV_Con_Carpetas.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "CUITContribuyente&Sequence_18",
         "CUITContribuyente&Sequence_2",
-        "CUITContribuyente&Sequence_8",
         "Ubicacion&Flowchart_1",
         "CUITMultiple&Sequence_4"
       ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
@@ -123,9 +123,9 @@
       "Path": "Descarga_Libros_TXT_Solo_RI_Con_Carpetas.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "CUITContribuyente&Sequence_8",
         "Ubicacion&Flowchart_1",
-        "CUITMultiple&Sequence_4",
-        "CUITContribuyente&Sequence_2"
+        "CUITMultiple&Sequence_4"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -139,8 +139,8 @@
         "Ubicacion&Flowchart_1",
         "CUITMultiple&Sequence_4"
       ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
   ]
