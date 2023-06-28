@@ -1,53 +1,126 @@
-Archivos base para la importación de comprobantes al SOS-Contador y La generación de los libros IVA compras y ventas (Tanto en formato PDF como TXT para su futura exportación en el libro IVA digital) mediante un BOT de UiPath
-#
-## El licenciamiento es con GPL (es decir que no se puede distribuir comercialmente, solamente GRATIS). y si se utiliza este el código, su derivado también debe ser distribuido abierta y gratuitamente. 
+# Bot para descargar los libros IVA compras y ventas (PDF y TXT) de SOS-Contador
 
- Breve descripción de la instalación del BOT
+Bot y Archivos base para la importación de comprobantes al SOS-Contador y La generación de los libros IVA compras y ventas (Tanto en formato PDF como TXT para su futura exportación en el libro IVA digital) mediante un BOT de UiPath
 
-    ֎ Crearse una cuenta en UiPath (https://www.uipath.com/)
-    
-    ֎ Descargar el Uipath Studio (https://www.uipath.com/studio) en la versión Community (es gratuita)
-    
-    ֎ Una vez instalado el Studio, se debe abrir el project.json o archivo .xaml y ejecutarlo. (se puede ejecutar desde el Studio o desde la consola de comandos)
+---
 
-Para ejecutar desde la consola de comandos, se debe ejecutar el siguiente comando:
+El licenciamiento es bajo PL (es decir que no se puede distribuir comercialmente, solamente GRATIS). y si se utiliza este el código, su derivado también debe ser distribuido abierta y gratuitamente.
 
-    UiPath.exe run -file "Directorio completo\Archivo.xaml" -input "Directorio Completo\proyect.json"
+---
+
+## Ejecución del BOT
+
+Los pasos para ejecutar el bot son los siguientes:
+
+1. Crearse una cuenta en UiPath ([https://www.uipath.com/](https://www.uipath.com/)).
+
+2. Descargar el Uipath Studio (https://www.uipath.com/studio) en la versión Community (es gratuita).
+
+3. Instalar la version el Studio (no la Studio X).
+
+    - Si se instala la versión Studio X se debe cambiar la versión del proyecto a Studio X con desde las configuraciones
+
+    ![Configuración de versión](https://github.com/abustosp/Configuraciones/blob/master/Uipath/Cambiar-a-Studio.png "Configuración de versión")
+
+      - Si no permite hacer este cambio se debe:
+
+        1. Iniciar sesión en Uipath cloud.
+
+        2. Eliminar la organización.
+
+        3. Crear una nueva organización.
+
+4. Descargar el BOT. Acá hay 3 opciones:
+   
+   1. Descargar el ZIP.
+   
+   2. Descargarlo con la integración de GIT desde el Uipath.
+
+     - Si no aparece la opción de GIT en el Uipath se debe instalar el GIT desde las configuraciones de Uipath
+
+     ![Configuración de GIT](https://github.com/abustosp/Configuraciones/blob/master/Uipath/Habilitar-GIT.png "Configuración de GIT")
+   
+   3. Descargar el repositorio con GIT utilizando el comando `git clone https://github.com/abustosp/IVA-Compras-y-Ventas-PDF-y-TXT-de-LID.git`
+
+5. Una vez Descargados los archivos se debe:
+   
+   1. Abrir el project.json o archivo .xaml
+   
+   2. Ejecutarlo (hacer click en el boton de "Play").
+
+---
+
+## Particularidades del BOT:
+
+- El Bot corre en Firefox (se puede configurar para Chrome pero se recomienda el primero por temas de rendimiento) y en Windows 10 cómo mínimo.
+
+  - Firefox se debe configurar de la siguiente manera:
+
+    1. El idioma tiene que estar en Español de Argentina
+
+    ![Configuración de idioma](https://github.com/abustosp/Configuraciones/blob/master/Firefox/Idioma-Espa%C3%B1ol-ARG.png "Configuración de idioma")
+
+    2. La descarga de archivos debe estar configurada para que se pregunte donde guardarlos
+
+    ![Configuración de descarga](https://github.com/abustosp/Configuraciones/blob/master/Firefox/Ubicacion-de-descargas.png "Configuración de descarga")
+
+    3. La descarga de archivos debe estar configurada para que no se pregunte si se quiere guardar el archivo (si el archivo aparece en la lista tiene que estar configurado con la opción de "Guardar Archivo" por ejemplo en el caso de los PDF y XLSX o planillas de cálculo)
+
+    ![Configuración de descarga](https://github.com/abustosp/Configuraciones/blob/master/Firefox/Descarga-de-Archivos.png "Configuración de descarga")
 
 
-Obviamente no me hago cargo del uso indebido del bot (ej si haces cagada y si te llegan a bloquear tu CUIT porque detecten que usas un bot (salió en una RG que prohibe el inicio automatico con bots con la consecuencia de bloquear el CUIT))
+- Para Ejecutar el BOT se debe completar la información de los Excels (hay que tener en cuenta el formato regional de Excel, en algunos casos hay que reemplazar en todas las fórmulas los AAAA por YYYY).
 
-y si lo compartís (hacelo gratis, mencioname también para que mas gente se introduzca en el mundo de RPA o mostrale mis videos para que vean que cosas pueden hacer)
+	 - Se deben completar como mínimo 2 Excels: El maestro que contiene las claves y las ubicaciones de los "Excels base" y los "Excels Base" que contienen la información de los comprobantes a emitir.
+
+- En caso que no se guarden los Archivos con el nombre definido en el Excel se debe ejecutar el bot que contiene en su nombre "sin ST"
+
+- Las ubicaciones del Excel deben ir desde el Disco hasta la Ubicación completa con un backslash final (ejemplo: `C:\Users\Agustin Bustos\Desktop\TEST\`)
+  
+  - Los de la ventana emergente inicial van sin el último backslash (ejemplo: `C:\Users\Agustin Bustos\Desktop\Test`) y es importante que esa ubicación exista. Esta ubicación se utiliza solamente cuando la direccion de descarga del Excel esta vacío
+
+---
+
+## Aclaraciones
+
+- La utilización del bot es bajo tu propia responsabilidad.
+
+- Si se comparte debe ser de manera GRATUITA, ya que la licencia es bajo PL. También los bots derivados deben seguir la misma licencia gratuita.
+
+---
+
+## Videos que pueden ser de utilidad
+
+1. Descarga de BOTs de repositorios de GitHub con Uipath: https://youtu.be/hD5BH7YzABw
+
+2. Descarga e instalación de GIT para descargar repositorios (en caso que no esta habilitada la funcionalidad nativa de Clonar los repositorios): https://youtu.be/ujk27tRdA80
+
+---
 
 Cualquier cosa pueden contactarme en:
 
-    https://www.linkedin.com/in/agust%C3%ADn-bustos-piasentini-468446122/
+- https://www.linkedin.com/in/agust%C3%ADn-bustos-piasentini-468446122/
 
-    https://www.youtube.com/user/agustinbustosp
+- https://www.youtube.com/user/agustinbustosp
 
-    whatsapp al https://wa.me/+5493764224695
+- whatsapp al https://wa.me/+5493764224695
 
-### Particularidades del BOT
-
-    ֎ El bot Corre solamente en Firefox por el momento y en Windows (a partir de windows 10 en adelante)
-
-    ֎ A veces es necesario tener la Extensión de Firefox instalada en modo de Current User (no en modo de All Users)
-
-    ֎ Se debe completar el Excel adjunto con la información de los contribuyentes (el BOT solamente toma los datos no filtrados)
+---
 
 <br/>
 
 ## 💰 Acepto donaciones para mantener el proyecto libre y gratuito
+
 <br/>
 
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/agustinbustosp) <!-- [<img src="http://ketekipo.com.ar/wp-content/uploads/2020/05/mercado-pago.png" alt="Image" height="30" width="100\">](https://paypal.me/paypal.me/agustinbustosp) -->
 
 <!-- [![Cafecito](https://img.shields.io/badge/-Cafecito-9cf?style=for-the-badge)](https://cafecito.app/abustos) -->
 
-[<img src="https://santanderpost.com.ar/wp-content/uploads/2022/02/Cafecito-.jpg" alt="Image" height="30" width="65\">](https://cafecito.app/abustos)
+[![Invitame un café en cafecito.app](https://cdn.cafecito.app/imgs/buttons/button_5.svg)](https://cafecito.app/abustos)
 
 <br/>
- 
+
 ## 💰 Y También en Pesos Argentinos
 
 <br/>
