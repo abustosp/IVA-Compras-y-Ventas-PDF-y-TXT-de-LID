@@ -68,11 +68,6 @@ Los pasos para ejecutar el bot son los siguientes:
 
     ![Configuración de descarga](https://github.com/abustosp/Configuraciones/blob/master/Firefox/Descarga-de-Archivos.png "Configuración de descarga")
 
-
-- Para Ejecutar el BOT se debe completar la información de los Excels (hay que tener en cuenta el formato regional de Excel, en algunos casos hay que reemplazar en todas las fórmulas los AAAA por YYYY).
-
-	 - Se deben completar como mínimo 2 Excels: El maestro que contiene las claves y las ubicaciones de los "Excels base" y los "Excels Base" que contienen la información de los comprobantes a emitir.
-
 - En caso que no se guarden los Archivos con el nombre definido en el Excel se debe ejecutar el bot que contiene en su nombre "sin ST"
 
 - Las ubicaciones del Excel deben ir desde el Disco hasta la Ubicación completa con un backslash final (ejemplo: `C:\Users\Agustin Bustos\Desktop\TEST\`)
@@ -89,12 +84,15 @@ Los pasos para ejecutar el bot son los siguientes:
 
 ---
 
-## Videos que pueden ser de utilidad
+## Links de Interés:
 
-1. Descarga de BOTs de repositorios de GitHub con Uipath: https://youtu.be/hD5BH7YzABw
+- Link de invitación al grupo de RPA en Discord: https://discord.gg/KVYyryvAcD
 
-2. Descarga e instalación de GIT para descargar repositorios (en caso que no esta habilitada la funcionalidad nativa de Clonar los repositorios): https://youtu.be/ujk27tRdA80
+- Link de invitación al grupo de RPA en WhatsApp: https://chat.whatsapp.com/IekktfvfTNLCkdIagO6xz3
 
+- Tutorial de Descarga de Bots desde Uipath: https://youtu.be/hD5BH7YzABw
+
+- Tutorial de Instalación y descarga de Repositorios con Git: https://youtu.be/ujk27tRdA80
 ---
 
 Cualquier cosa pueden contactarme en:
